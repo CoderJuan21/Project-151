@@ -3,10 +3,6 @@ AFRAME .registerComponent("Bases",{
        radius:{type:'number', default:150},
        height:{type:'number', default:3}
     },
-    tick:function(){
-        window.addEventListener("click",(e)=>{
-            this.data.moveX = this.data.moveX+0.01;
-        })},
     init:function(){
     this.el.setAttribute("geometry",{
         primitive:"cylinder",
